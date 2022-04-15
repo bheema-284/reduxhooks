@@ -7,7 +7,7 @@ const PrivateRoute = ({ isAuthenticated, children }) => {
   return isAuthenticated ? children : <Navigate to="/login" />;
 };
 function App() {
-  const isAuthenticated = false;
+  const isAuthenticated = true;
 
   return (
     <div className="App">

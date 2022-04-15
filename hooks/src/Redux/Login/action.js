@@ -19,7 +19,7 @@ export const login =
   ({ username, password }) =>
   (dispatch) => {
     dispatch(loginLoading());
-    fetch(`https:masai-api-mocker.herokuapp.com/auth/login`, {
+    fetch(`https://masai-api-mocker.herokuapp.com/auth/login`, {
       method: 'POST',
       body: JSON.stringify({ username, password }),
       headers: {
